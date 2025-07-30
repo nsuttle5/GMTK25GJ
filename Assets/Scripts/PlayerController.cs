@@ -162,7 +162,7 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
-        // Don't read from rigidbody here - velocity is already set in FixedUpdate
+
 
         // Determine target speed
         float targetSpeed = 0f;
