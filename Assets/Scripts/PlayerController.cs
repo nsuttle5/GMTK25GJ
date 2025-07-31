@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
     private float currentSpeed;
     private Vector2 velocity;
 
+    // Interaction logic for InteractableObject
+    private InteractableObject currentInteractable;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -234,6 +237,33 @@ public class PlayerController : MonoBehaviour
         {
             Gizmos.color = isGrounded ? Color.green : Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out InteractableObject interactable))
+        {
+            currentInteractable = interactable;
+            // Optionally show an interaction prompt here
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out InteractableObject interactable) && interactable == currentInteractable)
+        {
+            currentInteractable = null;
+            // Optionally hide the interaction prompt here
+        }
+    }
+
+    void LateUpdate()
+    {
+        // Interact with nearby object
+        if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
+        {
+            currentInteractable.Interact();
         }
     }
 }
