@@ -50,21 +50,24 @@ public class CreditsDisplay : MonoBehaviour
         GenerateCredits();
         StartCoroutine(ScrollCredits());
 
-        // Hide "Press any key" initially
+        // Show "Press any key" at all times
         if (pressAnyKeyText != null)
-            pressAnyKeyText.gameObject.SetActive(false);
+        {
+            pressAnyKeyText.text = "Press any key to continue...";
+            pressAnyKeyText.gameObject.SetActive(true);
+        }
     }
 
     void Update()
     {
-        // Allow manual skip only after credits finish scrolling
-        if (creditsCompleted && Input.anyKeyDown)
+        // Allow manual skip at any time
+        if (Input.anyKeyDown)
         {
             GoToNextGame();
         }
 
-        // Blink the "Press Any Key" text when credits are done
-        if (creditsCompleted && pressAnyKeyText != null && pressAnyKeyText.gameObject.activeInHierarchy)
+        // Blink the "Press Any Key" text at all times
+        if (pressAnyKeyText != null && pressAnyKeyText.gameObject.activeInHierarchy)
         {
             float alpha = (Mathf.Sin(Time.time * 3f) + 1f) * 0.5f;
             Color color = pressAnyKeyText.color;
@@ -210,11 +213,14 @@ public class CreditsDisplay : MonoBehaviour
 
         Debug.Log($"Starting credits scroll from Y: {startPos.y}, Screen height: {Screen.height}");
 
-        // Use a very large fixed scroll distance to ensure all credits are visible
-        float endY = 12000f; // Large fixed distance for 15 roles and future-proofing
-
+        // Use per-game scroll distance from GameEntry
+        float endY = 12000f;
+        if (GameManager.Instance != null && GameManager.Instance.CurrentGame != null)
+        {
+            endY = GameManager.Instance.CurrentGame.creditsScrollDistance;
+        }
         Debug.Log($"Text preferred height: {creditsScrollingText.preferredHeight}");
-        Debug.Log($"Using fixed end Y: {endY}");
+        Debug.Log($"Using per-game end Y: {endY}");
 
         float currentY = startPos.y;
 
@@ -235,14 +241,6 @@ public class CreditsDisplay : MonoBehaviour
         }
 
         Debug.Log("Credits scroll completed");
-
-        // Show "Press any key to continue" when credits finish
-        creditsCompleted = true;
-        if (pressAnyKeyText != null)
-        {
-            pressAnyKeyText.text = "Press any key to continue...";
-            pressAnyKeyText.gameObject.SetActive(true);
-        }
     }
 
     void GoToNextGame()

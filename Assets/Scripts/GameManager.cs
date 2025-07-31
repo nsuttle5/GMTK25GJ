@@ -101,4 +101,6 @@ public class GameEntry
     public string productionCompany = "Nostalgic Games Studio";
     [Range(5, 25)]
     public int numberOfRoles = 15;
+    [Header("Credits Scroll")]
+    public float creditsScrollDistance = 12000f;
 }
