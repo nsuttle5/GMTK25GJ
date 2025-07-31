@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float airDeceleration = 8f;
 
     [Header("Jump Settings")]
-    [SerializeField] private float jumpForce = 16f;
+    [SerializeField] public float jumpForce = 16f;
     [SerializeField] private float jumpHoldForce = 0.5f;
     [SerializeField] private float maxJumpTime = 0.35f;
     [SerializeField] private float fallMultiplier = 2.5f;
@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private bool facingRight = true;
 
+    // Powerup integration
+    public float moveSpeedMultiplier { get; set; } = 1f;
+
     // Jump variables
     private bool isGrounded;
     private bool isJumping;
@@ -51,6 +54,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        moveSpeedMultiplier = 1f;
 
         // Create ground check if it doesn't exist
         if (groundCheck == null)
@@ -165,13 +169,11 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
-
-
         // Determine target speed
         float targetSpeed = 0f;
         if (horizontalInput != 0)
         {
-            targetSpeed = walkSpeed * horizontalInput;
+            targetSpeed = walkSpeed * moveSpeedMultiplier * horizontalInput;
         }
 
         // Choose acceleration/deceleration values based on ground state
@@ -208,6 +210,12 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
+    }
+
+    // --- POWERUP SUPPORT ---
+    public bool IsGrounded()
+    {
+        return isGrounded;
     }
 
     void ApplyJumpPhysics()
