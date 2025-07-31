@@ -508,6 +508,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1715879646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &538061760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 538061762}
+  - component: {fileID: 538061761}
+  - component: {fileID: 538061763}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &538061761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538061760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f794f723e26420346be04830cfe8c46b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEntries:
+  - gameTitle: Ticky the Time Travelor
+    subtitle: Test 1
+    levelSceneName: SampleScene
+    franchiseJoke: This is a joke
+    titleColor: {r: 0.54726297, g: 0.78616345, b: 0.44747034, a: 0}
+  - gameTitle: 'Ticky 2: Tick Harder'
+    subtitle: Test 2
+    levelSceneName: SampleScene
+    franchiseJoke: This is a joke
+    titleColor: {r: 0.54088044, g: 0, b: 0, a: 0}
+  - gameTitle: 'Ticky 3: Tick Tock'
+    subtitle: Test 3
+    levelSceneName: SampleScene
+    franchiseJoke: This is a joke
+    titleColor: {r: 0.12400606, g: 0.24982275, b: 0.7169812, a: 0}
+  currentGameIndex: 0
+  titleCardSceneName: TitleCard
+  creditsSceneName: Credits
+--- !u!4 &538061762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538061760}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18063058, y: 0.42723322, z: -0.09248577}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &538061763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538061760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4e1ac95c39aca4e8fd6aa2905eed8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594841282
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,7 +840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &716373527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8238,3 +8314,4 @@ SceneRoots:
   - {fileID: 349475645}
   - {fileID: 716373530}
   - {fileID: 648708319}
+  - {fileID: 538061762}
