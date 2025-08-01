@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Level Intro UI")]
+    public LevelIntroUI levelIntroUI;
+    public Sprite playerIcon;
+    public int playerLives = 3;
     [Header("Game Sequence")]
     [SerializeField] private GameEntry[] gameEntries;
     [SerializeField] private int currentGameIndex = 0;
@@ -48,13 +52,34 @@ public class GameManager : MonoBehaviour
     {
         if (currentGameIndex < gameEntries.Length)
         {
-            SceneManager.LoadScene(CurrentGame.levelSceneName);
+            // Show level intro UI before loading level
+            if (levelIntroUI != null)
+            {
+                levelIntroUI.gameObject.SetActive(true);
+                Time.timeScale = 0f; // Pause gameplay
+                string worldName = $"World {CurrentGameNumber}";
+                levelIntroUI.Show(worldName, playerIcon, playerLives);
+                StartCoroutine(WaitForLevelIntroAndLoad(CurrentGame.levelSceneName));
+            }
+            else
+            {
+                SceneManager.LoadScene(CurrentGame.levelSceneName);
+            }
         }
         else
         {
             // All games completed - restart the loop
             RestartSequence();
         }
+    }
+
+    private System.Collections.IEnumerator WaitForLevelIntroAndLoad(string sceneName)
+    {
+        // Wait for the intro UI to finish (fadeDuration + displayDuration + fadeDuration)
+        float waitTime = 2 * (levelIntroUI != null ? levelIntroUI.fadeDuration : 1f) + (levelIntroUI != null ? levelIntroUI.displayDuration : 1.5f);
+        yield return new WaitForSecondsRealtime(waitTime);
+        Time.timeScale = 1f; // Unpause gameplay
+        // Do NOT reload the scene here; just let gameplay begin
     }
 
     public void CompleteCurrentLevel()

@@ -7,6 +7,8 @@ public class ExclaimBlock : MonoBehaviour
     public GameObject itemPrefab;
     public float itemPopUpDistance = 1f;
     public float itemPopUpSpeed = 4f;
+    [Header("Item Settings")]
+    public Vector2 itemMoveDirection = Vector2.right;
     private bool used = false;
     private SpriteRenderer sr;
 
@@ -38,6 +40,12 @@ public class ExclaimBlock : MonoBehaviour
         if (itemPrefab != null)
         {
             GameObject item = Instantiate(itemPrefab, transform.position, Quaternion.identity);
+            // Set item move direction if possible
+            var move = item.GetComponent<ItemMove>();
+            if (move != null)
+            {
+                move.moveDirection = itemMoveDirection;
+            }
             StartCoroutine(PopItem(item));
         }
     }
