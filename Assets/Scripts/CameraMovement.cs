@@ -19,8 +19,6 @@ public class CameraMovement : MonoBehaviour
     {
         Vector2 follow = playerToFollow.transform.position;
         float xDifference = Vector2.Distance(Vector2.right * transform.position.x - moveOffsetBox, Vector2.right * follow.x);
-        Debug.Log("This is the current xDIfference: " + xDifference);
-        Debug.Log("This is the current threshold: " + threshold.x);
 
         Vector3 newPosition = transform.position;
         if(xDifference >= threshold.x)
