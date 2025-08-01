@@ -856,7 +856,6 @@ MonoBehaviour:
   currentGameIndex: 0
   titleCardSceneName: TitleCard
   creditsSceneName: Credits
-  preLevelSceneName: preLevelStatus
 --- !u!4 &538061762
 Transform:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [Header("Scene Names")]
     [SerializeField] private string titleCardSceneName = "TitleCard";
     [SerializeField] private string creditsSceneName = "Credits";
+    [SerializeField] private string preLevelSceneName = "preLevelStatus";
 
     // Singleton instance
     public static GameManager Instance { get; private set; }
