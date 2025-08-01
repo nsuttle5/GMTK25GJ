@@ -225,10 +225,33 @@ public class BasicEnemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // You can add damage logic here
-            Debug.Log("Player touched enemy!");
+            // Get references
+            var player = other.GetComponent<PlayerController>();
+            var health = other.GetComponent<PlayerHealth>();
+            Rigidbody2D playerRb = other.attachedRigidbody;
 
-
+            // Improved stomp detection
+            float playerBottom = other.bounds.min.y;
+            float enemyTop = GetComponent<Collider2D>().bounds.max.y;
+            float yDiff = playerBottom - enemyTop;
+            float stompThreshold = 0.15f; // More forgiving
+            float playerDownwardVelocity = playerRb != null ? playerRb.linearVelocity.y : 0f;
+            if (yDiff > -stompThreshold && playerDownwardVelocity < -0.1f)
+            {
+                // Player stomped enemy
+                Destroy(gameObject);
+                // Optionally bounce player up
+                if (playerRb != null)
+                {
+                    playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, 12f); // Bounce value
+                }
+            }
+            else if (health != null)
+            {
+                // Player hit from side/below, take damage
+                Vector2 hitDir = (other.transform.position - transform.position).normalized;
+                health.TakeDamage(hitDir);
+            }
         }
     }
 
