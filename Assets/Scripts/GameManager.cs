@@ -3,10 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("Vanity Card UI")]
-    public VanityCardUI vanityCardUI;
-    [Header("Level Intro UI")]
-    public LevelIntroUI levelIntroUI;
     public Sprite playerIcon;
     public int playerLives = 3;
     [Header("Game Sequence")]
@@ -84,36 +80,14 @@ public class GameManager : MonoBehaviour
     // Main game flow coroutine
     private System.Collections.IEnumerator GameFlowCoroutine()
     {
-        // 1. Show Vanity Card (UI fade in/out, black background)
-        if (vanityCardUI != null)
-        {
-            vanityCardUI.gameObject.SetActive(true);
-            yield return vanityCardUI.ShowVanity(
-                CurrentGame.gameTitle,
-                CurrentGame.franchiseJoke,
-                CurrentGame.titleColor,
-                CurrentGame.yearOfPublication,
-                CurrentGame.companyName
-            );
-            vanityCardUI.gameObject.SetActive(false);
-        }
-        // 2. Show Title Card (scene)
+        // 1. Show Title Card (scene)
         LoadTitleCard();
         // Wait for user input to continue (TitleCardDisplay calls GameManager.Instance.GoToNextGame())
         yield return new WaitUntil(() => currentGameIndexHasAdvanced);
-        // 3. Show Level Intro UI (black background)
-        if (levelIntroUI != null)
-        {
-            levelIntroUI.gameObject.SetActive(true);
-            levelIntroUI.Show($"World {CurrentGameNumber}", playerIcon, playerLives);
-            float waitTime = 2 * levelIntroUI.fadeDuration + levelIntroUI.displayDuration;
-            yield return new WaitForSecondsRealtime(waitTime);
-            levelIntroUI.gameObject.SetActive(false);
-        }
-        // 4. Play Level (scene)
+        // 2. Play Level (scene)
         LoadLevel();
         // Wait for level to complete (should be triggered by level logic calling CompleteCurrentLevel)
-        // 5. Show Credits (scene)
+        // 3. Show Credits (scene)
         // After credits, GoToNextGame() will be called (e.g., from credits scene UI)
     }
 
@@ -135,10 +109,6 @@ public class GameEntry
     [Header("Parody Elements")]
     public string franchiseJoke = "Now with 50% more jumping!";
     public Color titleColor = Color.white;
-
-    [Header("Vanity Card Info")]
-    public string yearOfPublication = "1985";
-    public string companyName = "Nostalgic Games Studio";
 
     [Header("Credits Customization")]
     public string productionCompany = "Nostalgic Games Studio";
