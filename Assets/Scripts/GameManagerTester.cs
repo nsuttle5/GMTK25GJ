@@ -8,13 +8,13 @@ public class GameManagerTester : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log("Testing Title Card Load");
-            GameManager.Instance?.LoadTitleCard();
+            GameManager.Instance?.StartGameSequence(); // Now starts the full sequence
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            Debug.Log("Testing Level Load");
-            GameManager.Instance?.StartCurrentLevel();
+            Debug.Log("Testing Level Load (now starts full sequence)");
+            GameManager.Instance?.StartGameSequence();
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -51,8 +51,8 @@ public class GameManagerTester : MonoBehaviour
     void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 300, 20), "GameManager Tester");
-        GUI.Label(new Rect(10, 30, 300, 20), "T = Title Card, L = Level, C = Credits");
-        GUI.Label(new Rect(10, 50, 300, 20), "N = Next Game, S = Start Sequence");
+        GUI.Label(new Rect(10, 30, 300, 20), "T/L/S = Start Sequence, C = Credits");
+        GUI.Label(new Rect(10, 50, 300, 20), "N = Next Game");
         GUI.Label(new Rect(10, 70, 300, 20), "I = Show Current Game Info");
 
         if (GameManager.Instance != null)

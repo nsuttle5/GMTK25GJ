@@ -542,6 +542,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 2116419064153025935, guid: 38916d311d4381141b3ba37aef83b47b, type: 3}
   itemPopUpDistance: 1
   itemPopUpSpeed: 4
+  itemMoveDirection: {x: 1, y: 0}
 --- !u!61 &442536668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -825,12 +826,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f794f723e26420346be04830cfe8c46b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vanityCardUI: {fileID: 0}
+  levelIntroUI: {fileID: 0}
+  playerIcon: {fileID: 0}
+  playerLives: 3
   gameEntries:
   - gameTitle: Ticky the Time Travelor
     subtitle: Test 1
     levelSceneName: SampleScene
     franchiseJoke: This is a joke
     titleColor: {r: 0.54726297, g: 0.78616345, b: 0.44747034, a: 0}
+    yearOfPublication: 1985
+    companyName: Nostalgic Games Studio
     productionCompany: Shmango Studios
     numberOfRoles: 15
     creditsScrollDistance: 11000
@@ -839,6 +846,8 @@ MonoBehaviour:
     levelSceneName: SampleScene
     franchiseJoke: This is a joke
     titleColor: {r: 0.54088044, g: 0, b: 0, a: 0}
+    yearOfPublication: 1985
+    companyName: Nostalgic Games Studio
     productionCompany: Golition
     numberOfRoles: 10
     creditsScrollDistance: 8000
@@ -847,6 +856,8 @@ MonoBehaviour:
     levelSceneName: SampleScene
     franchiseJoke: This is a joke
     titleColor: {r: 0.12400606, g: 0.24982275, b: 0.7169812, a: 0}
+    yearOfPublication: 1985
+    companyName: Nostalgic Games Studio
     productionCompany: TenTales Games
     numberOfRoles: 15
     creditsScrollDistance: 12000

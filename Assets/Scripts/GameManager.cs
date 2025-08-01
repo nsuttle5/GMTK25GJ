@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Vanity Card UI")]
+    public VanityCardUI vanityCardUI;
     [Header("Level Intro UI")]
     public LevelIntroUI levelIntroUI;
     public Sprite playerIcon;
@@ -25,7 +27,6 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton pattern - persist across scenes
         if (Instance == null)
         {
             Instance = this;
@@ -40,74 +41,87 @@ public class GameManager : MonoBehaviour
     public void StartGameSequence()
     {
         currentGameIndex = 0;
-        LoadTitleCard();
+        StartCoroutine(GameFlowCoroutine());
     }
 
-    public void LoadTitleCard()
+    private void LoadTitleCard()
     {
         SceneManager.LoadScene(titleCardSceneName);
     }
 
-    public void StartCurrentLevel()
+    private void LoadLevel()
     {
-        if (currentGameIndex < gameEntries.Length)
-        {
-            // Show level intro UI before loading level
-            if (levelIntroUI != null)
-            {
-                levelIntroUI.gameObject.SetActive(true);
-                Time.timeScale = 0f; // Pause gameplay
-                string worldName = $"World {CurrentGameNumber}";
-                levelIntroUI.Show(worldName, playerIcon, playerLives);
-                StartCoroutine(WaitForLevelIntroAndLoad(CurrentGame.levelSceneName));
-            }
-            else
-            {
-                SceneManager.LoadScene(CurrentGame.levelSceneName);
-            }
-        }
-        else
-        {
-            // All games completed - restart the loop
-            RestartSequence();
-        }
+        SceneManager.LoadScene(CurrentGame.levelSceneName);
     }
 
-    private System.Collections.IEnumerator WaitForLevelIntroAndLoad(string sceneName)
-    {
-        // Wait for the intro UI to finish (fadeDuration + displayDuration + fadeDuration)
-        float waitTime = 2 * (levelIntroUI != null ? levelIntroUI.fadeDuration : 1f) + (levelIntroUI != null ? levelIntroUI.displayDuration : 1.5f);
-        yield return new WaitForSecondsRealtime(waitTime);
-        Time.timeScale = 1f; // Unpause gameplay
-        // Do NOT reload the scene here; just let gameplay begin
-    }
-
-    public void CompleteCurrentLevel()
+    private void LoadCredits()
     {
         SceneManager.LoadScene(creditsSceneName);
+    }
+
+    // Called by level logic when level is complete
+    public void CompleteCurrentLevel()
+    {
+        StartCoroutine(GoToCreditsCoroutine());
+    }
+
+    private System.Collections.IEnumerator GoToCreditsCoroutine()
+    {
+        yield return null;
+        LoadCredits();
     }
 
     public void GoToNextGame()
     {
         currentGameIndex++;
-
-        if (currentGameIndex < gameEntries.Length)
+        if (currentGameIndex >= gameEntries.Length)
         {
-            // Load next title card
-            LoadTitleCard();
+            currentGameIndex = 0;
         }
-        else
-        {
-            // Loop back to beginning - the endless franchise cycle!
-            RestartSequence();
-        }
+        StartCoroutine(GameFlowCoroutine());
     }
 
-    void RestartSequence()
+    // Main game flow coroutine
+    private System.Collections.IEnumerator GameFlowCoroutine()
     {
-        currentGameIndex = 0;
+        // 1. Show Vanity Card (UI fade in/out, black background)
+        if (vanityCardUI != null)
+        {
+            vanityCardUI.gameObject.SetActive(true);
+            yield return vanityCardUI.ShowVanity(
+                CurrentGame.gameTitle,
+                CurrentGame.franchiseJoke,
+                CurrentGame.titleColor,
+                CurrentGame.yearOfPublication,
+                CurrentGame.companyName
+            );
+            vanityCardUI.gameObject.SetActive(false);
+        }
+        // 2. Show Title Card (scene)
         LoadTitleCard();
+        // Wait for user input to continue (TitleCardDisplay calls GameManager.Instance.GoToNextGame())
+        yield return new WaitUntil(() => currentGameIndexHasAdvanced);
+        // 3. Show Level Intro UI (black background)
+        if (levelIntroUI != null)
+        {
+            levelIntroUI.gameObject.SetActive(true);
+            levelIntroUI.Show($"World {CurrentGameNumber}", playerIcon, playerLives);
+            float waitTime = 2 * levelIntroUI.fadeDuration + levelIntroUI.displayDuration;
+            yield return new WaitForSecondsRealtime(waitTime);
+            levelIntroUI.gameObject.SetActive(false);
+        }
+        // 4. Play Level (scene)
+        LoadLevel();
+        // Wait for level to complete (should be triggered by level logic calling CompleteCurrentLevel)
+        // 5. Show Credits (scene)
+        // After credits, GoToNextGame() will be called (e.g., from credits scene UI)
     }
+
+    // Helper property for coroutine to detect when title card input advances the game
+    private int lastGameIndex = -1;
+    private bool currentGameIndexHasAdvanced => lastGameIndex != currentGameIndex;
+    void OnEnable() { lastGameIndex = currentGameIndex; }
+    void OnDisable() { lastGameIndex = currentGameIndex; }
 }
 
 [System.Serializable]
@@ -121,6 +135,10 @@ public class GameEntry
     [Header("Parody Elements")]
     public string franchiseJoke = "Now with 50% more jumping!";
     public Color titleColor = Color.white;
+
+    [Header("Vanity Card Info")]
+    public string yearOfPublication = "1985";
+    public string companyName = "Nostalgic Games Studio";
 
     [Header("Credits Customization")]
     public string productionCompany = "Nostalgic Games Studio";

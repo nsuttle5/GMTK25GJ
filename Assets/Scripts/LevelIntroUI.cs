@@ -12,12 +12,10 @@ public class LevelIntroUI : MonoBehaviour
     public float fadeDuration = 1f;
     public float displayDuration = 1.5f;
 
-    // ...
-
     void Awake()
     {
         // Destroy duplicate LevelIntroUI objects
-        var others = FindObjectsOfType<LevelIntroUI>();
+        var others = FindObjectsByType<LevelIntroUI>(FindObjectsSortMode.None);
         if (others.Length > 1)
         {
             Destroy(gameObject);
@@ -54,7 +52,6 @@ public class LevelIntroUI : MonoBehaviour
         gameObject.SetActive(false); // Hide UI after intro
         // Optionally: Unpause gameplay here
     }
-    // ...
 
     void SetAlpha(float a)
     {

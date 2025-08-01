@@ -86,6 +86,7 @@ public class TitleCardDisplay : MonoBehaviour
 
     void StartLevel()
     {
-        GameManager.Instance?.StartCurrentLevel();
+        // GameManager.Instance?.StartCurrentLevel();
+        GameManager.Instance?.GoToNextGame();
     }
 }

@@ -252,6 +252,7 @@ public class BasicEnemy : MonoBehaviour
                 Vector2 hitDir = (other.transform.position - transform.position).normalized;
                 health.TakeDamage(hitDir);
             }
+
         }
     }
 
