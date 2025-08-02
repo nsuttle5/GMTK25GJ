@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 58d378b7f136ddc4aac4012f4bc185da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6491934152444653001
+    second: TickyTitlePages 1_0
+  - first:
+      213: 9085227854274980181
+    second: TickyTitlePages 1_1
+  - first:
+      213: -7096731837352091941
+    second: TickyTitlePages 1_2
+  - first:
+      213: 1566777145289648809
+    second: TickyTitlePages 1_3
+  - first:
+      213: -7418094930589341356
+    second: TickyTitlePages 1_4
+  - first:
+      213: 3797128319203860990
+    second: TickyTitlePages 1_5
+  - first:
+      213: -3505574425709435614
+    second: TickyTitlePages 1_6
+  - first:
+      213: 3200224699578849868
+    second: TickyTitlePages 1_7
+  - first:
+      213: 7982106488511430428
+    second: TickyTitlePages 1_8
+  - first:
+      213: 9004192285964179401
+    second: TickyTitlePages 1_9
+  - first:
+      213: 6738397696763763145
+    second: TickyTitlePages 1_10
+  - first:
+      213: 5551328764095767149
+    second: TickyTitlePages 1_11
+  - first:
+      213: 4135048502340503588
+    second: TickyTitlePages 1_12
+  - first:
+      213: -660815098306575974
+    second: TickyTitlePages 1_13
+  - first:
+      213: -6863469819403039238
+    second: TickyTitlePages 1_14
+  - first:
+      213: -3552593495800282234
+    second: TickyTitlePages 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TickyTitlePages 1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 95
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7325f4ab84408e5a0800000000000000
+      internalID: -6491934152444653001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 139
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5596b8d0996351e70800000000000000
+      internalID: 9085227854274980181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 98
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde5c687ef7538d90800000000000000
+      internalID: -7096731837352091941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 88
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaa033338f4eb510800000000000000
+      internalID: 1566777145289648809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 87
+        width: 56
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459a810a6f1ad0990800000000000000
+      internalID: -7418094930589341356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 94
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1e8b8961c12b430800000000000000
+      internalID: 3797128319203860990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 50
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22525e512a2b95fc0800000000000000
+      internalID: -3505574425709435614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 50
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a14d3a86b796c20800000000000000
+      internalID: 3200224699578849868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_8
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 50
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f701f6f8326ce60800000000000000
+      internalID: 7982106488511430428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 50
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c715368d2155fc70800000000000000
+      internalID: 9004192285964179401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 50
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c91aeee009938d50800000000000000
+      internalID: 6738397696763763145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 50
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62265749184a0d40800000000000000
+      internalID: 5551328764095767149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_12
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428440754b4a26930800000000000000
+      internalID: 4135048502340503588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 50
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91c8335b2054d6f0800000000000000
+      internalID: -660815098306575974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 50
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd0edf309e00c0a0800000000000000
+      internalID: -6863469819403039238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages 1_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 50
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683067bb907a2bec0800000000000000
+      internalID: -3552593495800282234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TickyTitlePages 1_0: -6491934152444653001
+      TickyTitlePages 1_1: 9085227854274980181
+      TickyTitlePages 1_10: 6738397696763763145
+      TickyTitlePages 1_11: 5551328764095767149
+      TickyTitlePages 1_12: 4135048502340503588
+      TickyTitlePages 1_13: -660815098306575974
+      TickyTitlePages 1_14: -6863469819403039238
+      TickyTitlePages 1_15: -3552593495800282234
+      TickyTitlePages 1_2: -7096731837352091941
+      TickyTitlePages 1_3: 1566777145289648809
+      TickyTitlePages 1_4: -7418094930589341356
+      TickyTitlePages 1_5: 3797128319203860990
+      TickyTitlePages 1_6: -3505574425709435614
+      TickyTitlePages 1_7: 3200224699578849868
+      TickyTitlePages 1_8: 7982106488511430428
+      TickyTitlePages 1_9: 9004192285964179401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
