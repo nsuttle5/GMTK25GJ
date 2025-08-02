@@ -119,6 +119,8 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
+=======
 --- !u!1 &426557698
 GameObject:
   m_ObjectHideFlags: 0
@@ -6865,6 +6867,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343728a1d46b2124e8802d289f87a877, type: 3}
+>>>>>>> 25e695fe6f7050a93fea545e6df6c286f7b42986
 --- !u!1 &699409555
 GameObject:
   m_ObjectHideFlags: 0
@@ -6876,8 +6879,6 @@ GameObject:
   - component: {fileID: 699409558}
   - component: {fileID: 699409557}
   - component: {fileID: 699409556}
-  - component: {fileID: 699409560}
-  - component: {fileID: 699409559}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6959,6 +6960,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
 --- !u!114 &699409559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7019,6 +7022,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+>>>>>>> 25e695fe6f7050a93fea545e6df6c286f7b42986
 --- !u!1 &751003873
 GameObject:
   m_ObjectHideFlags: 0
@@ -7100,12 +7104,14 @@ Transform:
   m_GameObject: {fileID: 751003873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 101.7, y: 2.2, z: 0.86}
+  m_LocalPosition: {x: 101.7, y: 2.2, z: 0}
   m_LocalScale: {x: 6.207179, y: 6.207179, z: 6.207179}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
 --- !u!1001 &1077884760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7575,12 +7581,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c748923d78969d469397deca7e27625, type: 3}
+>>>>>>> 25e695fe6f7050a93fea545e6df6c286f7b42986
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 699409558}
   - {fileID: 751003875}
+<<<<<<< HEAD
+=======
   - {fileID: 1756755923}
   - {fileID: 1894606064}
   - {fileID: 2126967013}
@@ -7591,3 +7600,4 @@ SceneRoots:
   - {fileID: 438875448}
   - {fileID: 1539778999}
   - {fileID: 1433430265}
+>>>>>>> 25e695fe6f7050a93fea545e6df6c286f7b42986
