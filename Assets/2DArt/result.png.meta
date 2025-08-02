@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: e1e539892c18af249bb02254c97318af
+guid: de89ed3cad326f14688ae81f6cd1e2a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4241602702429670679
-    second: Map4BG_0
+      213: 8356354729213926755
+    second: result_0
+  - first:
+      213: -2973317010107304648
+    second: result_1
+  - first:
+      213: 7820841249212869949
+    second: result_2
+  - first:
+      213: 8659754262950818534
+    second: result_3
+  - first:
+      213: 8813802149847586765
+    second: result_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,12 +49,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -72,10 +84,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,30 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Map4BG_0
+      name: result_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3584
-        height: 240
+        x: 38
+        y: 29
+        width: 486
+        height: 306
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e2b75ba0dcc225c0800000000000000
-      internalID: -4241602702429670679
+      spriteID: 36d93f33a5cb7f370800000000000000
+      internalID: 8356354729213926755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: result_1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 176
+        width: 146
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8357defbee7acb6d0800000000000000
+      internalID: -2973317010107304648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: result_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 27
+        width: 232
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d2e08fda5398c60800000000000000
+      internalID: 7820841249212869949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: result_3
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 36
+        width: 42
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2bb5dee90ad2870800000000000000
+      internalID: 8659754262950818534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: result_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 28
+        width: 136
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc75d369b5ae05a70800000000000000
+      internalID: 8813802149847586765
       vertices: []
       indices: 
       edges: []
@@ -148,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Map4BG_0: -4241602702429670679
+      result_0: 8356354729213926755
+      result_1: -2973317010107304648
+      result_2: 7820841249212869949
+      result_3: 8659754262950818534
+      result_4: 8813802149847586765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
