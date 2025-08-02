@@ -3,18 +3,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    [SerializeField] private float walkSpeed = 6f;
-    [SerializeField] private float acceleration = 12f;
-    [SerializeField] private float deceleration = 16f;
-    [SerializeField] private float airAcceleration = 6f;
-    [SerializeField] private float airDeceleration = 8f;
+    [SerializeField] private float walkSpeed = 5f;
+    [SerializeField] private float acceleration = 200f;
+    [SerializeField] private float deceleration = 80f;
+    [SerializeField] private float airAcceleration = 9f;
+    [SerializeField] private float airDeceleration = 2f;
 
     [Header("Jump Settings")]
-    [SerializeField] public float jumpForce = 16f;
-    [SerializeField] private float jumpHoldForce = 0.5f;
+    [SerializeField] public float jumpForce = 19f;
     [SerializeField] private float maxJumpTime = 0.35f;
-    [SerializeField] private float fallMultiplier = 2.5f;
-    [SerializeField] private float lowJumpMultiplier = 2f;
+    [SerializeField] private float gravityMultiplier = 3f;
+    [SerializeField] private float lowJumpGravity = 9f;
 
     [Header("Ground Detection")]
     [SerializeField] private Transform groundCheck;
@@ -157,7 +156,7 @@ public class PlayerController : MonoBehaviour
         {
             if (jumpTimeCounter < maxJumpTime)
             {
-                velocity.y += jumpHoldForce * Time.deltaTime * 60f; // 60f for frame rate independence
+                //velocity.y += jumpHoldForce * Time.deltaTime * 60f; // 60f for frame rate independence
                 jumpTimeCounter += Time.deltaTime;
             }
             else
@@ -220,16 +219,13 @@ public class PlayerController : MonoBehaviour
 
     void ApplyJumpPhysics()
     {
-        // Apply different gravity based on jump state (Mario-style variable jump)
-        if (velocity.y < 0)
+        if (velocity.y > 0 && !Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.Z))
         {
-            // Falling - apply stronger gravity
-            velocity.y += Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+            velocity.y += Physics2D.gravity.y * lowJumpGravity * Time.fixedDeltaTime;
         }
-        else if (velocity.y > 0 && (!Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.Z)))
+        else
         {
-            // Rising but not holding jump - apply moderate gravity
-            velocity.y += Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
+            velocity.y += Physics2D.gravity.y * gravityMultiplier * Time.fixedDeltaTime;
         }
     }
 
