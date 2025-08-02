@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TickyAttack_0: 1614422858772809415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
