@@ -1,5 +1,10 @@
-using UnityEngine;
+using System;
 using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +14,13 @@ public class PlayerHealth : MonoBehaviour
     public float knockbackForce = 10f;
     public Color flashColor = Color.red;
     public float flashDuration = 0.1f;
+    
+    public Color color3 = Color.green;
+    public Color color2 = Color.yellow;
+    public Color color1 = Color.red;
+
+    public Image healthRing;
+    public TextMeshProUGUI healthText;
 
     private bool isInvincible = false;
     private float invincibleTimer = 0f;
@@ -16,6 +28,11 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D rb;
     private Color originalColor;
     private PlayerController playerController;
+
+    public AudioClip damageSound;
+    public AudioClip deathSound;
+    public AudioSource aSource;
+    private float startTime = 0.35f;
 
     void Awake()
     {
@@ -43,6 +60,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isInvincible) return;
         currentHealth = Mathf.Max(0, currentHealth - 1);
+        UpdateHealthUI();
         isInvincible = true;
         invincibleTimer = invincibleTime;
         sr.color = flashColor;
@@ -54,11 +72,46 @@ public class PlayerHealth : MonoBehaviour
             rb.AddForce(new Vector2(hitDirection.x, 1f).normalized * knockbackForce, ForceMode2D.Impulse);
         }
         // Optionally: trigger death if health == 0
+        if (aSource != null)
+        {
+            if (currentHealth > 0)
+            {
+                aSource.time = startTime;
+                aSource.Play();
+            }
+            else
+            {
+                aSource.PlayOneShot(deathSound);
+            }
+        }
         if (currentHealth <= 0)
         {
             // TODO: Handle player death (respawn, game over, etc.)
         }
     Optionally: StartCoroutine(FlashSprite());
+    }
+
+    private void UpdateHealthUI()
+    {
+        healthText.text = currentHealth.ToString();
+        healthRing.fillAmount = (float) currentHealth / maxHealth;
+        if (currentHealth == 3)
+        {
+            healthRing.color = color3;
+            healthRing.fillAmount = 1f;
+        } else if (currentHealth == 2)
+        {
+            healthRing.color = color2;
+            healthRing.fillAmount = 0.63f;
+        } else if (currentHealth == 1)
+        {
+            healthRing.color = color1;
+            healthRing.fillAmount = 0.365f;
+        }
+        else
+        {
+            healthRing.color = Color.cyan;
+        }
     }
 
     // Call this to set the hurt animation state in PlayerController
@@ -73,11 +126,14 @@ public class PlayerHealth : MonoBehaviour
     // Flash sprite for invincibility
     IEnumerator FlashSprite()
     {
+        Color og = healthRing.color;
         for (float t = 0; t < invincibleTime; t += flashDuration * 2)
         {
             sr.color = flashColor;
+            healthRing.color = Color.white;
             yield return new WaitForSeconds(flashDuration);
             sr.color = originalColor;
+            healthRing.color = og;
             yield return new WaitForSeconds(flashDuration);
         }
         sr.color = originalColor;
