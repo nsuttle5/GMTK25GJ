@@ -8579,6 +8579,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 330795203851750528, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
   m_PrefabInstance: {fileID: 8853291481313173070}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1715879651
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715879643}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3bc023ce681d0234786192fe4ee3f911, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1948103903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9200,10 +9222,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3064025534723125234, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4185454
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064025534723125234, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.20927274
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064025534723125234, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064025534723125234, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065105182222185635, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: walkSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065105182222185635, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: groundCheckRadius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228249375918334222, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7574950307166975102, guid: 1b8c347a1eaf19d4884a07e49395daac, type: 3}
+    - target: {fileID: 6228249375918334222, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228249375918334222, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228249375918334222, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 330795203851750528, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715879651}
   m_SourcePrefab: {fileID: 100100000, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
