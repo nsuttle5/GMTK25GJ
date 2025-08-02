@@ -691,6 +691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ade06d927a84d4387af17ac6b76c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationAmount: 10
+  speed: 1
 --- !u!1 &862415195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1213,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2d249da67e45249bd2b90576220d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels: []
+  thisGameObject: {fileID: 2092009371}
+  levels:
+  - SampleScene
+  - TickyTwo
+  - TickyTwo
 --- !u!4 &2092009373
 Transform:
   m_ObjectHideFlags: 0
