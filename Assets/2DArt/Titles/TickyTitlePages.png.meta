@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 88f22d87fab9886489a4ba40f45eb2e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2021473961516671275
+    second: TickyTitlePages_0
+  - first:
+      213: -8918012570292673085
+    second: TickyTitlePages_1
+  - first:
+      213: -80736963584985132
+    second: TickyTitlePages_2
+  - first:
+      213: -2860751645547267549
+    second: TickyTitlePages_3
+  - first:
+      213: -2823061169402612764
+    second: TickyTitlePages_4
+  - first:
+      213: -7345040145798137477
+    second: TickyTitlePages_5
+  - first:
+      213: -5006227570880180561
+    second: TickyTitlePages_6
+  - first:
+      213: 3729228975658158245
+    second: TickyTitlePages_7
+  - first:
+      213: 5740304859026758405
+    second: TickyTitlePages_8
+  - first:
+      213: 866257990774326222
+    second: TickyTitlePages_9
+  - first:
+      213: 1179268467290675635
+    second: TickyTitlePages_10
+  - first:
+      213: 4387791573791478859
+    second: TickyTitlePages_11
+  - first:
+      213: -6286804596307925220
+    second: TickyTitlePages_12
+  - first:
+      213: 6614257578758264842
+    second: TickyTitlePages_13
+  - first:
+      213: -6110219123888381671
+    second: TickyTitlePages_14
+  - first:
+      213: 8321904621472908202
+    second: TickyTitlePages_15
+  - first:
+      213: 4670337147217026359
+    second: TickyTitlePages_16
+  - first:
+      213: -2670745493628507198
+    second: TickyTitlePages_17
+  - first:
+      213: 6145595933500833628
+    second: TickyTitlePages_18
+  - first:
+      213: 5748388528522794354
+    second: TickyTitlePages_19
+  - first:
+      213: -5431759327670014613
+    second: TickyTitlePages_20
+  - first:
+      213: -8928963941362123601
+    second: TickyTitlePages_21
+  - first:
+      213: 931863410281433428
+    second: TickyTitlePages_22
+  - first:
+      213: 8830765391998478040
+    second: TickyTitlePages_23
+  - first:
+      213: -8680807805867377511
+    second: TickyTitlePages_24
+  - first:
+      213: -2741258728932436260
+    second: TickyTitlePages_25
+  - first:
+      213: -9061039362278569254
+    second: TickyTitlePages_26
+  - first:
+      213: -3121367852817696584
+    second: TickyTitlePages_27
+  - first:
+      213: 4026339240337170112
+    second: TickyTitlePages_28
+  - first:
+      213: 8729956537859492417
+    second: TickyTitlePages_29
+  - first:
+      213: -3090620563394962093
+    second: TickyTitlePages_30
+  - first:
+      213: -8402729713979080170
+    second: TickyTitlePages_31
+  - first:
+      213: 3272105631134523303
+    second: TickyTitlePages_32
+  - first:
+      213: -5258642018492040179
+    second: TickyTitlePages_33
+  - first:
+      213: 7688363281762040132
+    second: TickyTitlePages_34
+  - first:
+      213: 2721943047082181513
+    second: TickyTitlePages_35
+  - first:
+      213: -2608283322257532359
+    second: TickyTitlePages_36
+  - first:
+      213: -8856309221799931370
+    second: TickyTitlePages_37
+  - first:
+      213: -4531509289528404558
+    second: TickyTitlePages_38
+  - first:
+      213: -8071354912362161105
+    second: TickyTitlePages_39
+  - first:
+      213: 8505499513842708245
+    second: TickyTitlePages_40
+  - first:
+      213: -6907086774898008755
+    second: TickyTitlePages_41
+  - first:
+      213: -5461708902046290249
+    second: TickyTitlePages_42
+  - first:
+      213: -140937821324299768
+    second: TickyTitlePages_43
+  - first:
+      213: -1540097108495340318
+    second: TickyTitlePages_44
+  - first:
+      213: 8863924117633803014
+    second: TickyTitlePages_45
+  - first:
+      213: -4506783371167358419
+    second: TickyTitlePages_46
+  - first:
+      213: 5986293425733521629
+    second: TickyTitlePages_47
+  - first:
+      213: 3567821084629767877
+    second: TickyTitlePages_48
+  - first:
+      213: 8567747968883706150
+    second: TickyTitlePages_49
+  - first:
+      213: -9204375354037119186
+    second: TickyTitlePages_50
+  - first:
+      213: 4969812384941074527
+    second: TickyTitlePages_51
+  - first:
+      213: 2758802492469437467
+    second: TickyTitlePages_52
+  - first:
+      213: 8092603101051288305
+    second: TickyTitlePages_53
+  - first:
+      213: 2119784477426271731
+    second: TickyTitlePages_54
+  - first:
+      213: 2501383043505764996
+    second: TickyTitlePages_55
+  - first:
+      213: -4944942136271941178
+    second: TickyTitlePages_56
+  - first:
+      213: -672482429252893198
+    second: TickyTitlePages_57
+  - first:
+      213: -1910276704137715679
+    second: TickyTitlePages_58
+  - first:
+      213: 2303276603098882489
+    second: TickyTitlePages_59
+  - first:
+      213: -1203242405062953867
+    second: TickyTitlePages_60
+  - first:
+      213: -8960394049086830293
+    second: TickyTitlePages_61
+  - first:
+      213: -238495959474299391
+    second: TickyTitlePages_62
+  - first:
+      213: -5194719608926571069
+    second: TickyTitlePages_63
+  - first:
+      213: 1225934325044556638
+    second: TickyTitlePages_64
+  - first:
+      213: -1536651660257829523
+    second: TickyTitlePages_65
+  - first:
+      213: -5887554213704502444
+    second: TickyTitlePages_66
+  - first:
+      213: 6961928168964432185
+    second: TickyTitlePages_67
+  - first:
+      213: -6013730371683122955
+    second: TickyTitlePages_68
+  - first:
+      213: -1363949790779374357
+    second: TickyTitlePages_69
+  - first:
+      213: 7172359178856606502
+    second: TickyTitlePages_70
+  - first:
+      213: -8733332692840913073
+    second: TickyTitlePages_71
+  - first:
+      213: 8686483162711780151
+    second: TickyTitlePages_72
+  - first:
+      213: 2602477291990954635
+    second: TickyTitlePages_73
+  - first:
+      213: -8692129807763348571
+    second: TickyTitlePages_74
+  - first:
+      213: -5297229400419228330
+    second: TickyTitlePages_75
+  - first:
+      213: -3447687671992346426
+    second: TickyTitlePages_76
+  - first:
+      213: 7686792369203092856
+    second: TickyTitlePages_77
+  - first:
+      213: -9072213368425823723
+    second: TickyTitlePages_78
+  - first:
+      213: 727757435555457246
+    second: TickyTitlePages_79
+  - first:
+      213: -3570753145525292316
+    second: TickyTitlePages_80
+  - first:
+      213: 7665203403867567589
+    second: TickyTitlePages_81
+  - first:
+      213: -7657708650272462099
+    second: TickyTitlePages_82
+  - first:
+      213: 6061031004337970692
+    second: TickyTitlePages_83
+  - first:
+      213: -1875738328842522624
+    second: TickyTitlePages_84
+  - first:
+      213: -6272499972369214774
+    second: TickyTitlePages_85
+  - first:
+      213: -46909760327045308
+    second: TickyTitlePages_86
+  - first:
+      213: -8198915482969243077
+    second: TickyTitlePages_87
+  - first:
+      213: -1444117466100580649
+    second: TickyTitlePages_88
+  - first:
+      213: -287308069471827127
+    second: TickyTitlePages_89
+  - first:
+      213: 4976728587503577789
+    second: TickyTitlePages_90
+  - first:
+      213: -2942295410442275202
+    second: TickyTitlePages_91
+  - first:
+      213: 7973495556889573347
+    second: TickyTitlePages_92
+  - first:
+      213: -7049445901271278771
+    second: TickyTitlePages_93
+  - first:
+      213: 6771707907925341403
+    second: TickyTitlePages_94
+  - first:
+      213: -5928478843568580848
+    second: TickyTitlePages_95
+  - first:
+      213: -1146968655792884809
+    second: TickyTitlePages_96
+  - first:
+      213: -2280791042361246098
+    second: TickyTitlePages_97
+  - first:
+      213: -4705646972521271418
+    second: TickyTitlePages_98
+  - first:
+      213: 3482475941622124572
+    second: TickyTitlePages_99
+  - first:
+      213: 6006132200883827430
+    second: TickyTitlePages_100
+  - first:
+      213: -5451041381059434869
+    second: TickyTitlePages_101
+  - first:
+      213: -9078910778863881332
+    second: TickyTitlePages_102
+  - first:
+      213: -7749383390677416116
+    second: TickyTitlePages_103
+  - first:
+      213: -2405494757281888972
+    second: TickyTitlePages_104
+  - first:
+      213: -7606449278228535590
+    second: TickyTitlePages_105
+  - first:
+      213: 803189411317785589
+    second: TickyTitlePages_106
+  - first:
+      213: 3562775301742351682
+    second: TickyTitlePages_107
+  - first:
+      213: -6797792779079273303
+    second: TickyTitlePages_108
+  - first:
+      213: -3832973150334440590
+    second: TickyTitlePages_109
+  - first:
+      213: -8375748549640195706
+    second: TickyTitlePages_110
+  - first:
+      213: 5696447173384987829
+    second: TickyTitlePages_111
+  - first:
+      213: -6347081597110677347
+    second: TickyTitlePages_112
+  - first:
+      213: -4428632137470593610
+    second: TickyTitlePages_113
+  - first:
+      213: -8384616115524605683
+    second: TickyTitlePages_114
+  - first:
+      213: 2812565272233799316
+    second: TickyTitlePages_115
+  - first:
+      213: 4763455361979974733
+    second: TickyTitlePages_116
+  - first:
+      213: 5250600927443038251
+    second: TickyTitlePages_117
+  - first:
+      213: 2815041894525198891
+    second: TickyTitlePages_118
+  - first:
+      213: 4457542109507658730
+    second: TickyTitlePages_119
+  - first:
+      213: 5550043706317595511
+    second: TickyTitlePages_120
+  - first:
+      213: -3402667568877744651
+    second: TickyTitlePages_121
+  - first:
+      213: 5462067959196060631
+    second: TickyTitlePages_122
+  - first:
+      213: 1105210295300796472
+    second: TickyTitlePages_123
+  - first:
+      213: 3101920423698573282
+    second: TickyTitlePages_124
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TickyTitlePages_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf133c13d6e1344cb7b0e054da014f1
+      internalID: 1010104893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 630
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525ff0884edb5ad44a40ca7db7c8cd54
+      internalID: -1543163814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdbb3f7bec4b1c49878484915309471
+      internalID: 1495963719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 440
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8250883aefc30cd4ea6197ea0d204b6b
+      internalID: 1909689920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b365bba9be344141b5252ef280e8f3a
+      internalID: -1534994592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 250
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3ac2bf4624f324ba9da6eecdf69013
+      internalID: 297715050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5ffe137bee2814bb6a2dcbc80b6bf8
+      internalID: -915059019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TickyTitlePages_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 60
+        width: 320
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb3fc0491cf84e4c9155fbfcd64d5c4
+      internalID: 1729241048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 504b893ba2329e2438dbd0a203b792b1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TickyTitlePages_0: 1010104893
+      TickyTitlePages_1: -1543163814
+      TickyTitlePages_2: 1495963719
+      TickyTitlePages_3: 1909689920
+      TickyTitlePages_4: -1534994592
+      TickyTitlePages_5: 297715050
+      TickyTitlePages_6: -915059019
+      TickyTitlePages_7: 1729241048
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
