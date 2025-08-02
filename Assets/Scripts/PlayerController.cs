@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     // Components
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     // Movement variables
     private float horizontalInput;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         moveSpeedMultiplier = 1f;
@@ -71,6 +73,11 @@ public class PlayerController : MonoBehaviour
         CheckGrounded();
         HandleCoyoteTime();
         HandleJumpBuffer();
+
+        // --- ANIMATION LOGIC ---
+        animator.SetBool("isRunning", Mathf.Abs(horizontalInput) > 0.01f && isGrounded);
+        animator.SetBool("isJumping", !isGrounded);
+        // Hurt should be set externally (e.g., from PlayerHealth) when taking damage
     }
 
     void FixedUpdate()
@@ -269,5 +276,12 @@ public class PlayerController : MonoBehaviour
         {
             currentInteractable.Interact();
         }
+    }
+
+    // Called by PlayerHealth to set hurt animation
+    public void SetHurt(bool value)
+    {
+        if (animator != null)
+            animator.SetBool("isHurt", value);
     }
 }

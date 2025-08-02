@@ -15,12 +15,14 @@ public class PlayerHealth : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     private Color originalColor;
+    private PlayerController playerController;
 
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         originalColor = sr.color;
+        playerController = GetComponent<PlayerController>();
     }
 
     void Update()
@@ -32,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 isInvincible = false;
                 sr.color = originalColor;
+                SetHurt(false); // Reset hurt animation
             }
         }
     }
@@ -43,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = true;
         invincibleTimer = invincibleTime;
         sr.color = flashColor;
+        SetHurt(true); // Trigger hurt animation
         // Knockback
         if (rb != null)
         {
@@ -55,6 +59,15 @@ public class PlayerHealth : MonoBehaviour
             // TODO: Handle player death (respawn, game over, etc.)
         }
     Optionally: StartCoroutine(FlashSprite());
+    }
+
+    // Call this to set the hurt animation state in PlayerController
+    private void SetHurt(bool value)
+    {
+        if (playerController != null)
+        {
+            playerController.SetHurt(value);
+        }
     }
 
     // Flash sprite for invincibility
