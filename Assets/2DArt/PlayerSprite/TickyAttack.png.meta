@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6777da432918db54abb1e2a7545f613d
+guid: 88dc7b6aa1b370d4ba78184687b6795f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2275883595283353267
-    second: ticky_0
+      213: 1614422858772809415
+    second: TickyAttack_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ticky_0
+      name: TickyAttack_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 1808
-        height: 892
+        width: 42
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bec00f5210959f10800000000000000
-      internalID: 2275883595283353267
+      spriteID: 7c68c665905976610800000000000000
+      internalID: 1614422858772809415
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ticky_0: 2275883595283353267
+      TickyAttack_0: 1614422858772809415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
