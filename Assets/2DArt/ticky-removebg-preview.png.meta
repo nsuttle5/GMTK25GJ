@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ticky-removebg-preview_0: -4451801182783658468
+      ticky-removebg-preview_1: -772434847343597972
+      ticky-removebg-preview_10: 4040514892218241297
+      ticky-removebg-preview_11: -5435766670030565842
+      ticky-removebg-preview_12: 523457148524325595
+      ticky-removebg-preview_2: 8025809350377489344
+      ticky-removebg-preview_3: 7588417516781403208
+      ticky-removebg-preview_4: 6069337332057616878
+      ticky-removebg-preview_5: 5495700023804752414
+      ticky-removebg-preview_6: -5696036554355440000
+      ticky-removebg-preview_7: 6609622994195600241
+      ticky-removebg-preview_8: -1917159850581379900
+      ticky-removebg-preview_9: -4941527797029459355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
