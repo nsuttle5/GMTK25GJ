@@ -22,6 +22,7 @@ public class JumpingEnemies : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
     private bool movingRight = true;
     private Vector3 startPosition;
     private float leftBound;
@@ -34,6 +35,7 @@ public class JumpingEnemies : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         startPosition = transform.position;
 
         // Set up patrol bounds
@@ -69,6 +71,15 @@ public class JumpingEnemies : MonoBehaviour
     {
         CheckGrounded();
         PatrolLogic();
+        UpdateAnimator();
+    }
+
+    void UpdateAnimator()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("isJumping", !isGrounded);
+        }
     }
 
     void PatrolLogic()
