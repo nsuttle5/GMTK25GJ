@@ -1195,7 +1195,7 @@ GameObject:
   - component: {fileID: 2092009373}
   - component: {fileID: 2092009372}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SceneManagement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,7 +1217,11 @@ MonoBehaviour:
   levels:
   - SampleScene
   - TickyTwo
-  - TickyTwo
+  - TickyAndTocky
+  - Ticky4
+  - Ticky5
+  - TickSix
+  - TickyRem
 --- !u!4 &2092009373
 Transform:
   m_ObjectHideFlags: 0
