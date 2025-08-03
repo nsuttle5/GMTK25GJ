@@ -33,6 +33,12 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private bool facingRight = true;
 
+    [Header("Audio")]
+    public AudioSource walkAudioSource; // Assign in inspector, set to loop
+    public AudioSource jumpAudioSource; // Assign in inspector, one-shot
+    private bool wasRunning = false;
+    private bool wasGrounded = false;
+
     // Powerup integration
     public float moveSpeedMultiplier { get; set; } = 1f;
 
@@ -75,9 +81,29 @@ public class PlayerController : MonoBehaviour
         HandleJumpBuffer();
 
         // --- ANIMATION LOGIC ---
-        animator.SetBool("isRunning", Mathf.Abs(horizontalInput) > 0.01f && isGrounded);
-        animator.SetBool("isJumping", !isGrounded);
-        // Hurt should be set externally (e.g., from PlayerHealth) when taking damage
+        bool isRunning = Mathf.Abs(horizontalInput) > 0.01f && isGrounded;
+        if (animator != null)
+        {
+            animator.SetBool("isRunning", isRunning);
+            animator.SetBool("isJumping", !isGrounded);
+            // Hurt should be set externally (e.g., from PlayerHealth) when taking damage
+        }
+
+        // --- AUDIO LOGIC ---
+        // Walking sound
+        if (walkAudioSource != null)
+        {
+            if (isRunning && !wasRunning)
+            {
+                if (!walkAudioSource.isPlaying)
+                    walkAudioSource.Play();
+            }
+            else if (!isRunning && wasRunning)
+            {
+                walkAudioSource.Stop();
+            }
+        }
+        wasRunning = isRunning;
     }
 
     void FixedUpdate()
@@ -156,6 +182,11 @@ public class PlayerController : MonoBehaviour
             velocity.y = jumpForce;
             jumpBufferCounter = 0f;
             coyoteTimeCounter = 0f;
+            // Play jump sound
+            if (jumpAudioSource != null)
+            {
+                jumpAudioSource.Play();
+            }
         }
 
         // Continue jump (variable height)
