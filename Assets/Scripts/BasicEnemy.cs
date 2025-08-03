@@ -21,8 +21,12 @@ public class BasicEnemy : MonoBehaviour
     [SerializeField] private bool turnAtWalls = true; // Turn around when hitting walls
     [SerializeField] private bool onlyCheckLedgesWhenGrounded = true; // Only check for ledges when enemy is on ground
 
+
     [Header("Visual")]
     [SerializeField] private bool flipSpriteOnTurn = true;
+
+    [Header("Audio")]
+    public AudioSource deathAudioSource; // Assign in inspector
 
     // Private variables
     private Rigidbody2D rb;
@@ -239,7 +243,18 @@ public class BasicEnemy : MonoBehaviour
             if (yDiff > -stompThreshold && playerDownwardVelocity < -0.1f)
             {
                 // Player stomped enemy
-                gameObject.SetActive(false);
+                if (deathAudioSource != null && deathAudioSource.clip != null)
+                {
+                    deathAudioSource.Play();
+                    // Hide enemy visuals/collider immediately, destroy after sound
+                    GetComponent<Collider2D>().enabled = false;
+                    if (spriteRenderer != null) spriteRenderer.enabled = false;
+                    Destroy(gameObject, deathAudioSource.clip.length);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
                 // Optionally bounce player up
                 if (playerRb != null)
                 {
