@@ -194,7 +194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 154035116097805928, guid: 2c5c038eee137794b9cadb7ca437bfd3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 308097458573329315, guid: 2c5c038eee137794b9cadb7ca437bfd3, type: 3}
       propertyPath: m_Pivot.x
@@ -9398,6 +9398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0ad2706bd610d4d8ec477214532e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activatedSprite: {fileID: 0}
 --- !u!212 &1460032777
 SpriteRenderer:
   m_ObjectHideFlags: 0
