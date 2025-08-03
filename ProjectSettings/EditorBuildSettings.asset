@@ -26,6 +26,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleCard.unity
     guid: 05a03c8f4209b174794642a468b7a465
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 1.unity
+    guid: 6dadb62e370eee14d945cdf80898307a
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 2.unity
+    guid: e0aea5539854d564abfda05fc7ac9476
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 3.unity
+    guid: ecd43f6de2eaba541a3492a522831452
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 4.unity
+    guid: f92f16c48150db243a3006a012bfaaf4
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 5.unity
+    guid: 2f95e8b44fde6c7428cc65e14db390ae
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 6.unity
+    guid: 1b9f2295d63cf5047a6cfaead8788df1
+  - enabled: 1
+    path: Assets/Scenes/Title Screens/Main Menu 7.unity
+    guid: a4b6bbaa8e62ffb4a87d29f15e08a56f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
