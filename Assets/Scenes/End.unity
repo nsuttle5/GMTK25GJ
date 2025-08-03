@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creditsText: {fileID: 457463837}
   scrollSpeed: 200
-  nextSceneName: Main Menu 1
+  nextSceneName: Main Menu
   stopDelay: 20
 --- !u!4 &114859214
 Transform:
