@@ -10754,6 +10754,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 666617343}
   m_SourcePrefab: {fileID: 100100000, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+--- !u!114 &1637826623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5938605201023755765, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+  m_PrefabInstance: {fileID: 1637826622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666617342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d984b38003479d49ac4666107d57c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1659357012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4990451335775082816, guid: 343728a1d46b2124e8802d289f87a877, type: 3}
@@ -11277,6 +11288,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5474cf42799963e4185f4ad0c141eb21, type: 3}
+--- !u!1 &2004624599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004624601}
+  - component: {fileID: 2004624600}
+  m_Layer: 0
+  m_Name: DeathManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2004624600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004624599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b8bf38f882abd4093191ff7af0ed4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 666617342}
+  respawnables: []
+  playerHealth: {fileID: 1637826623}
+--- !u!4 &2004624601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004624599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.500688, y: 1.4445746, z: -0.08955598}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2027880140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3380231525889861333, guid: 5474cf42799963e4185f4ad0c141eb21, type: 3}
@@ -11605,3 +11663,4 @@ SceneRoots:
   - {fileID: 2137487347}
   - {fileID: 1222158611}
   - {fileID: 1483814809}
+  - {fileID: 2004624601}
