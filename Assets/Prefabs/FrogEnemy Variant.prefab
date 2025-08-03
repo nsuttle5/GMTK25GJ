@@ -49,6 +49,10 @@ PrefabInstance:
       value: FrogEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6478373443865025113, guid: 211ba33bc73eb274c99cd54089cdc328, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478373443865025113, guid: 211ba33bc73eb274c99cd54089cdc328, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}

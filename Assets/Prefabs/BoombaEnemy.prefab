@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7285872182736502679}
   - component: {fileID: 3735648785705504118}
   - component: {fileID: 4642452709409479625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoombaEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556010711213331335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 470671648999918819}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
