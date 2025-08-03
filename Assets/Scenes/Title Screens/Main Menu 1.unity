@@ -1205,11 +1205,35 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -9.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7565259639596851371, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565259639596851371, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565259639596851371, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38
+      objectReference: {fileID: 0}
     - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
       propertyPath: m_text
       value: 'Smiggledog
 
         and Friends'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 05e6113fd446a87438ea05e2a2fb86fa, type: 2}
+    - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6618218771827865204, guid: 05e6113fd446a87438ea05e2a2fb86fa, type: 2}
+    - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
