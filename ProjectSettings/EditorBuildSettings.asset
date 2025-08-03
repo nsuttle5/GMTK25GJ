@@ -18,6 +18,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/TickyAndTocky.unity
     guid: 6e1a1c0c6c42d40419a7fd2a6a92f7df
   - enabled: 1
+    path: Assets/Scenes/Levels/Ticky4.unity
+    guid: c913a76bd35c1494b9105ce7cd662856
+  - enabled: 1
+    path: Assets/Scenes/Levels/Ticky5.unity
+    guid: 9e36d9e1ee4c3b8499da4ef5c124e1e8
+  - enabled: 1
+    path: Assets/Scenes/Levels/TickSix.unity
+    guid: e40344f88c4b28d49bfbfc49e5f171f0
+  - enabled: 1
+    path: Assets/Scenes/Levels/TickyRem.unity
+    guid: fa0ec1edc4138624fbdfbe291295631a
+  - enabled: 1
+    path: Assets/Scenes/Levels/Ticky8.unity
+    guid: d3c8bf132ff82b24a95584ac986e9f13
+  - enabled: 1
     path: Assets/Scenes/SampleScene1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -47,6 +62,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title Screens/Main Menu 7.unity
     guid: a4b6bbaa8e62ffb4a87d29f15e08a56f
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 35a4f70b31fe2be48868499d7495d5f9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
