@@ -6,6 +6,8 @@ public class PlayerAttack : MonoBehaviour
     public Vector2 boxSize = new Vector2(1f, 1f);
     public LayerMask enemyLayer;
     public GameObject p;
+    public AudioClip clip;
+    public AudioSource aSource;
     private SpriteRenderer sr;
 
     void Start()
@@ -24,6 +26,11 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         Vector2 direction;
+
+        if (clip != null)
+        {
+            aSource.PlayOneShot(clip);
+        }
         // Determine direction player is facing
         if (sr.flipX)
         {
