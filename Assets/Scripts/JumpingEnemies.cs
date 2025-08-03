@@ -20,6 +20,9 @@ public class JumpingEnemies : MonoBehaviour
     [Header("Visual")]
     [SerializeField] private bool flipSpriteOnTurn = true;
 
+    [Header("Audio")]
+    public AudioSource deathAudioSource; // Assign in inspector
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -184,7 +187,19 @@ public class JumpingEnemies : MonoBehaviour
             if (yDiff > -stompThreshold && playerDownwardVelocity < -0.1f)
             {
                 // Player stomped enemy
-                Destroy(gameObject);
+                if (deathAudioSource != null && deathAudioSource.clip != null)
+                {
+                    deathAudioSource.Play();
+                    // Hide enemy visuals/collider immediately, destroy after sound
+                    GetComponent<Collider2D>().enabled = false;
+                    if (spriteRenderer != null) spriteRenderer.enabled = false;
+                    if (animator != null) animator.enabled = false;
+                    Destroy(gameObject, deathAudioSource.clip.length);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
                 // Bounce player up
                 if (playerRb != null)
                 {

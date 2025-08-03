@@ -3,6 +3,9 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     private SpriteRenderer sr;
+    [Header("Checkpoint Sprites")]
+    public Sprite activatedSprite; // Assign in inspector
+
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -14,10 +17,13 @@ public class Checkpoint : MonoBehaviour
         // Optional: only react to the player
         if (other.CompareTag("Player"))
         {
-            CheckpointManager.Instance.lastPos = transform.position; 
+            CheckpointManager.Instance.lastPos = transform.position;
             Debug.Log("Checkpoint reached!");
             //change this for the real checkpoints
-            sr.color = Color.green;
+            if (activatedSprite != null)
+                sr.sprite = activatedSprite;
+            else
+                sr.color = Color.green;
         }
     }
 }
