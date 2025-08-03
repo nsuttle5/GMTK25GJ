@@ -7,6 +7,9 @@ public class JumpPad : MonoBehaviour
     public string[] launchTags = { "Player", "Enemy" };
     public float minDownwardVelocity = -1f; // Only launch if falling at least this fast
 
+    [Header("Audio")]
+    public AudioSource jumpPadAudioSource; // Assign in inspector
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         foreach (string tag in launchTags)
@@ -21,6 +24,10 @@ public class JumpPad : MonoBehaviour
                     {
                         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
                         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                        if (jumpPadAudioSource != null && jumpPadAudioSource.clip != null)
+                        {
+                            jumpPadAudioSource.Play();
+                        }
                     }
                 }
                 break;
