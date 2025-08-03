@@ -899,6 +899,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2387693385323832348, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f2cd20b4753a1f458161d00cd72bdec, type: 2}
+    - target: {fileID: 2387693385323832348, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8591911904207475085, guid: 5f2cd20b4753a1f458161d00cd72bdec, type: 2}
+    - target: {fileID: 2387693385323832348, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5230782627197457701, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
       propertyPath: m_Name
       value: PreTitle
@@ -906,6 +918,18 @@ PrefabInstance:
     - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
       propertyPath: m_text
       value: microhard
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f2cd20b4753a1f458161d00cd72bdec, type: 2}
+    - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8591911904207475085, guid: 5f2cd20b4753a1f458161d00cd72bdec, type: 2}
+    - target: {fileID: 9149797306224618272, guid: 479842375d71a2b4c81233213e31d6d6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -39,7 +39,7 @@ public class Curtainscript : MonoBehaviour
         }
         else
         {
-            StartCoroutine(CurtainScroll(5f));
+            StartCoroutine(CurtainScroll(3f));
         }
     }
     IEnumerator CurtainScroll(float delay)
