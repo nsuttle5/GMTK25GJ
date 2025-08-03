@@ -91,5 +91,7 @@ public class PreMenuScreen : MonoBehaviour
             c.a = 0f;
             textsToFade[i].color = c;
         }
+        // Deactivate the pre-title screen after fade out
+        gameObject.SetActive(false);
     }
 }

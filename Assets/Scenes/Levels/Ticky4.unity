@@ -8091,6 +8091,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1513747360448791044, guid: 4d6f90d02ceaf69439e0cae0bc933b8a, type: 3}
+      propertyPath: nextSceneName
+      value: Main Menu 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1683386813210510018, guid: 4d6f90d02ceaf69439e0cae0bc933b8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 210.22581
