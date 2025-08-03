@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -9,10 +10,13 @@ public class PlayerAttack : MonoBehaviour
     public AudioClip clip;
     public AudioSource aSource;
     private SpriteRenderer sr;
+    private Animator animator;
+    public float attackAnimTime = 0.25f; // How long isAttacking stays true
 
     void Start()
     {
         sr = p.GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -30,6 +34,13 @@ public class PlayerAttack : MonoBehaviour
         if (clip != null)
         {
             aSource.PlayOneShot(clip);
+        }
+        // Set isAttacking true
+        if (animator != null)
+        {
+            animator.SetBool("isAttacking", true);
+            StopAllCoroutines();
+            StartCoroutine(ResetAttackFlag());
         }
         // Determine direction player is facing
         if (sr.flipX)
@@ -50,6 +61,13 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log($"Hit: {hit.gameObject.name}");
             hit.gameObject.SetActive(false); // Or Destroy(hit.gameObject)
         }
+    }
+
+    private IEnumerator ResetAttackFlag()
+    {
+        yield return new WaitForSeconds(attackAnimTime);
+        if (animator != null)
+            animator.SetBool("isAttacking", false);
     }
 
     // Optional: visualize attack zone
