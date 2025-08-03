@@ -16,6 +16,7 @@ public class Checkpoint : MonoBehaviour
         {
             CheckpointManager.Instance.lastPos = transform.position; 
             Debug.Log("Checkpoint reached!");
+            //change this for the real checkpoints
             sr.color = Color.green;
         }
     }
