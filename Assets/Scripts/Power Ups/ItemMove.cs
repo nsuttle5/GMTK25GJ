@@ -5,6 +5,7 @@ public class ItemMove : MonoBehaviour
     public float moveSpeed = 2f;
     public Vector2 moveDirection = Vector2.right;
     private Rigidbody2D rb;
+    public PlayerPowerups pp;
 
     [Header("Audio")]
     public AudioSource pickupAudioSource; // Assign in inspector
@@ -19,6 +20,7 @@ public class ItemMove : MonoBehaviour
         if (Random.value > 0.5f) moveDirection = Vector2.left;
         // Give the item an initial push
         rb.linearVelocity = new Vector2(moveDirection.x * moveSpeed, rb.linearVelocity.y);
+        pp = GameObject.Find("Player").GetComponent<PlayerPowerups>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -29,6 +31,7 @@ public class ItemMove : MonoBehaviour
             {
                 pickupAudioSource.transform.SetParent(null); // Detach so it isn't destroyed
                 pickupAudioSource.Play();
+                pp.ActivateSpeedBoost(12.5f);
                 Destroy(pickupAudioSource.gameObject, pickupAudioSource.clip.length);
             }
             Destroy(gameObject);

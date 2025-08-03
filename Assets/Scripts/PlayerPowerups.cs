@@ -12,7 +12,7 @@ public class PlayerPowerups : MonoBehaviour
 
     [Header("Dash")]
     public bool dashEnabled = false;
-    public float dashForce = 15f;
+    public float dashForce = 20f;
     public float dashCooldown = 0.5f;
     private float lastDashTime = -10f;
 
