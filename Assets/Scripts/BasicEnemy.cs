@@ -239,7 +239,7 @@ public class BasicEnemy : MonoBehaviour
             if (yDiff > -stompThreshold && playerDownwardVelocity < -0.1f)
             {
                 // Player stomped enemy
-                Destroy(gameObject);
+                gameObject.SetActive(false);
                 // Optionally bounce player up
                 if (playerRb != null)
                 {

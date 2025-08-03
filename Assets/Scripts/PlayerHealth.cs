@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 2;
-    public int currentHealth = 1;
+    public int maxHealth = 3;
+    public int currentHealth = 3;
     public float invincibleTime = 1.5f;
     public float knockbackForce = 10f;
     public Color flashColor = Color.red;
@@ -33,6 +33,8 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip deathSound;
     public AudioSource aSource;
     private float startTime = 0.35f;
+
+    public DeathManager dm;
 
     void Awake()
     {
@@ -66,7 +68,7 @@ public class PlayerHealth : MonoBehaviour
         sr.color = flashColor;
         SetHurt(true); // Trigger hurt animation
         // Knockback
-        if (rb != null)
+        if (rb != null && currentHealth > 0)
         {
             rb.linearVelocity = Vector2.zero;
             rb.AddForce(new Vector2(hitDirection.x, 1f).normalized * knockbackForce, ForceMode2D.Impulse);
@@ -86,9 +88,26 @@ public class PlayerHealth : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
-            // TODO: Handle player death (respawn, game over, etc.)
+            dm.KillPlayer();
         }
-    Optionally: StartCoroutine(FlashSprite());
+    }
+
+    public void SetHealth(int health)
+    {
+        if (health > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth = health;
+        }
+        UpdateHealthUI();
+    }
+
+    public int getHealth()
+    {
+        return currentHealth;
     }
 
     private void UpdateHealthUI()
