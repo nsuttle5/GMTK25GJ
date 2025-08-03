@@ -151,7 +151,7 @@ MonoBehaviour:
   creditsText: {fileID: 457463837}
   scrollSpeed: 200
   nextSceneName: Main Menu
-  stopDelay: 20
+  stopDelay: 35
 --- !u!4 &114859214
 Transform:
   m_ObjectHideFlags: 0
@@ -205,12 +205,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: Hello all tickeys! We are so proud of how much our fandom has grown over
+    the past several years. We've published so many games we are so proud of, and
+    we know how much this community loves Ticky! There are so many memories that
+    we share with Ticky, and we are forever grateful of what he has done for us.
+    That being said, we have decided to immediately shut down all production of current
+    and future Ticky games. As our loyal fandom has not loved our more recent games,
+    we can no longer fund any projects relating to more titles. Do not worry though,
+    jobs will still be saved! At least our jobs, here at corporate. All those developers
+    who poisned the game have been let go. Good riddance! Anyways, we value your
+    ongoing support and maybe one day, when true fans emerge, we will be able to
+    publish more games. Thank you!                                     Press E to
+    continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
