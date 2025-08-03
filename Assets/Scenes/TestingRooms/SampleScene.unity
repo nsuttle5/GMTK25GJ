@@ -325,7 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 165940182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 11, y: -9}
-  m_SizeDelta: {x: 2.3603, y: 2.2732}
+  m_SizeDelta: {x: 2.2583, y: 2.0983}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &928051818
 MonoBehaviour:
@@ -1665,7 +1665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.071, y: 0.121}
+  m_AnchoredPosition: {x: 0.0710001, y: 0.12100005}
   m_SizeDelta: {x: 0.97403, y: 1.51117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037057495
@@ -9578,6 +9578,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1715879667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715879643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592a3a2196b445a4b93a219e94f46338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.75
+  boxSize: {x: 2.5, y: 1}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  p: {fileID: 1715879643}
+  clip: {fileID: 8300000, guid: 4d8b084039aec8347b1b654e8c786c6f, type: 3}
+  aSource: {fileID: 1715879668}
+--- !u!82 &1715879668 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -4817262697777255703, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+  m_PrefabInstance: {fileID: 8853291481313173070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1873652580
 GameObject:
   m_ObjectHideFlags: 0
@@ -9904,7 +9929,7 @@ Transform:
   m_GameObject: {fileID: 1966267465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 101.7, y: 2.69, z: 0.33}
+  m_LocalPosition: {x: 100.09, y: 2.91, z: 0.33}
   m_LocalScale: {x: 6.207179, y: 6.207179, z: 6.207179}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9925,7 +9950,7 @@ GameObject:
   - component: {fileID: 1985026207}
   - component: {fileID: 1985026212}
   - component: {fileID: 1985026213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10221,7 +10246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2050377094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10403,7 +10428,7 @@ PrefabInstance:
     - target: {fileID: 5938605201023755765, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
       propertyPath: damageSound
       value: 
-      objectReference: {fileID: 8300000, guid: 8668214380deba24d968446d0651d8fc, type: 3}
+      objectReference: {fileID: 8300000, guid: 98cd5bbc9d6caa544a9ff5db602971b1, type: 3}
     - target: {fileID: 5938605201023755765, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
       propertyPath: currentHealth
       value: 3
@@ -10432,6 +10457,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 330795203851750528, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715879667}
     - targetCorrespondingSourceObject: {fileID: 330795203851750528, guid: 0654c34f7ebfba34a97f4a1ef98ccb91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1715879651}
